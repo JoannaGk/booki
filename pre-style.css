@@ -27,7 +27,7 @@
    
 }
 
-a :hover {
+a:hover {
     border-top: 3px #0065FC solid;
     border-bottom: 3px transparent solid;
   }
@@ -37,7 +37,7 @@ a :hover {
     color: #0065FC;
 }
 
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 768px) {
     .section_1 header .left img {
         display: none;
     }
