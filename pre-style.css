@@ -1,4 +1,4 @@
-
+/*GENERAL*/
 
 * {
     margin: 0;
@@ -8,6 +8,7 @@
     text-decoration: none;
 }
 
+/* HEADER LOGO + MENU */
 .section_1 header {
     display:flex ;
     align-items: center;
@@ -18,13 +19,12 @@
     height: 100%;
 }
 
-
+/* NAV BAR*/
 .section_1 header nav a {
     padding: 32px;
     font-weight: 500;
     text-align: center;
     color:black;
-   
 }
 
 a:hover {
@@ -37,6 +37,7 @@ a:hover {
     color: #0065FC;
 }
 
+/* RESPONSIVE */
 @media screen and (max-width: 768px) {
     .section_1 header .left img {
         display: none;
@@ -50,16 +51,16 @@ a:hover {
 }
 }
 
-.main h1 p {
-    display:block;
-    align-items: center;
-    justify-content:space-between;
+/*MAIN TITRE */
+.main_title {
+    display: block;
     max-width: 1400px;
     margin: 25px auto;
     padding: 20px 0px 10px 0px;
     height: 100%;
 }
 
+/*PIED DE PAGE FOOTER */
 .footer {
     display: block;
     background-color: #f2f2f2;
@@ -69,6 +70,7 @@ a:hover {
     box-sizing: border-box;
 }
 
+/* NAV DU FOOTER */
 .footer_nav {
     display: flex;
     align-items: center;
