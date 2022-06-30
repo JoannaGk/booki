@@ -42,14 +42,14 @@ a:hover {
     .section_1 header .left img {
         display: none;
     }
-}
+
     
 .section_1 header {
     margin: 0 25px;
     justify-content: center;
     height: 50px;
 }
-
+}
 
 /*MAIN TITRE */
 .main_title {
