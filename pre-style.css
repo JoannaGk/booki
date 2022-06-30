@@ -30,7 +30,7 @@
 a:hover {
     border-top: 3px #0065FC solid;
     border-bottom: 3px transparent solid;
-  }
+}
 
 .header_nav_link[data-active=true] {
     border-top: 3px #0065FC solid;
@@ -42,14 +42,14 @@ a:hover {
     .section_1 header .left img {
         display: none;
     }
-
+}
     
 .section_1 header {
     margin: 0 25px;
     justify-content: center;
     height: 50px;
 }
-}
+
 
 /*MAIN TITRE */
 .main_title {
