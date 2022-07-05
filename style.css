@@ -10,6 +10,7 @@ GENERAL
     text-decoration: none;
 }
 
+
 /* 
 HEADER LOGO + MENU 
 */
@@ -17,7 +18,8 @@ HEADER LOGO + MENU
     display:flex ;
     align-items: center;
     justify-content:space-between;
-    max-width: 1400px;
+    width: 80%;
+    max-width: 992px;
     margin: auto;
     padding: 20px 0px 10px 0px;
 }
@@ -61,7 +63,8 @@ MAIN TITRE
 */
 .main_title {
     display: block;
-    max-width: 1400px;
+    max-width: 992px;
+    width: 80%;
     margin: 25px auto;
     padding: 20px 0px 10px 0px;
     height: 100%;
@@ -72,59 +75,185 @@ MAIN TITRE
     font-weight: bold;
 }
 
+/* 
+RECHERCHE
+ */
 .search_box {
-    display: block;
-    max-width: 1400px;
+    display:inline-block;
+    max-width: 992px;
+    width: 80%;
     margin: 25px auto;
     padding: 20px 0px 10px 0px;
     height: 100%;
-    font-size: small;
+    font-size: medium;
+    border: solid 2px #e2e2e2;
+    margin-top: 10px;
+    margin-left: 25px;
+    border-radius: 200px;
+  
 }
+.search_box button {
+    background-color: #0065FC;
+    color: white;
+}
+
+/* 
+FILTRES
+ */
 
 .filters {
     display: flex;
-    max-width: 1400px;
+    max-width: 992px;
+    width: 80%;
     margin: 25px auto;
     padding: 20px 0px 10px 0px;
     height: 100%;
-    font-size: small;
+    font-size: medium;
 }
+
+.filters_list {
+    display: inline-flex;
+}
+
+.filters_list_item {
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    max-width:992px;
+    width: 80%;
+    margin: 25px 20px 25px 20px;
+    font-weight: 700;
+    font-size: medium;
+    border: solid 2px #e2e2e2;
+    padding: 0px 20px 0px 0px;
+    margin-top: 10px;
+    margin-left: 25px;
+    border-radius: 200px;
+
+}
+
+.fas {
+    background-color: rgb(154, 206, 236);
+    padding:10px;
+    border-radius: 50%;
+    color: #0065FC;
+}
+
+.far {
+    background-color: rgb(154, 206, 236);
+    padding:10px;
+    border-radius: 50%;
+    color: #0065FC;
+}
+
 
 .info {
-    display: block;
-    max-width: 1400px;
+    display: flex;
+    max-width: 992px;
+    width: 80%;
     margin: 25px auto;
     padding: 20px 0px 10px 0px;
     height: 100%;
     font-size: small;
 }
 
+.info p {
+    display: inline;
+}
+
+/* 
+RÉSULTAT DE LA RECHERCHE HÉBERGEMENT
+ */
 .hotel {
     display:flex ;
     align-items: center;
     justify-content:space-between;
-    max-width: 1400px;
+    max-width: 992px;
+    width: 80%;
     margin: auto;
     padding: 20px 0px 10px 0px;
+
 }
 
-.activities {
-    display:flex ;
-    align-items: center;
-    justify-content:space-between;
-    max-width: 1400px;
-    margin: auto;
-    padding: 20px 0px 10px 0px;
+.hotel_research {
+    display: flex;
+    flex-wrap: wrap;
+    background: #F2F2F2;
+    border-radius: 25px;
 }
+
+/* 
+MOSAÏQUE IMAGES
+ */
+.hotel_item img {
+    box-shadow: 0 4px 8px 0;
+    background-color: white;
+    border-radius: 20px;
+    width: 237px;
+    height: 260px;
+    position: relative;
+    float:inline-start;
+    padding: 20px;
+    margin: 20px;
+    overflow: hidden;
+}
+
+.popular {
+    display: flex;
+    flex-wrap: wrap;
+    background: #F2F2F2;
+    border-radius: 25px;
+
+}
+/* 
+MOSAÏQUE IMAGE
+ */
+.popular_item img {
+    box-shadow: 0 4px 8px 0;
+    background-color: white;
+    border-radius: 20px;
+    width: 237px;
+    height: 260px;
+    position: relative;
+    float:right;
+    padding: 20px;
+    margin: 20px;
+    overflow: hidden;
+}
+/* 
+ACTIVITÉS
+ */
+.activities {
+    display: flex;
+    flex-wrap: wrap;
+    background: #F2F2F2;
+    border-radius: 25px;
+
+}
+.activities_item {
+    box-shadow: 0 4px 8px 0;
+    background-color: white;
+    border-radius: 20px;
+    width: 237px;
+    height: 260px;
+    position: relative;
+    float:right;
+    padding: 20px;
+    margin: 20px;
+    overflow: hidden;
+}
+
+
 /*
 PIED DE PAGE FOOTER 
 */
 .footer {
     display: block;
     background-color: #f2f2f2;
-    width: 100%;
-    margin: auto;
-    padding: auto;
+    max-width: 992px;
+    width: 80%;
+    margin: 25px 10px 25px 10px;
+    padding: 20px 0px 10px 0px;
     box-sizing: border-box;
 }
 
@@ -136,8 +265,9 @@ NAV DU FOOTER
     display:flex ;
     align-items: center;
     justify-content:space-evenly;
-    max-width: 1400px;
-    margin: 0 10 0 10;
+    max-width: 992px;
+    width: 80%;
+    margin: auto;
     padding: 60px 40px 40px 40px;
 }
 
