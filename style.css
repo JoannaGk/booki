@@ -18,8 +18,8 @@ HEADER LOGO + MENU
     display:flex ;
     align-items: center;
     justify-content:space-between;
-    width: 80%;
-    max-width: 992px;
+    width: 100%;
+    max-width: 1400px;
     margin: auto;
     padding: 20px 0px 10px 0px;
 }
@@ -48,13 +48,21 @@ HEADER LOGO + MENU
 RESPONSIVE HEADER
 */
 @media screen and (max-width: 768px) {
-    .header .left img {
-        /* display: none; */
+    .header {
+        flex-direction: column;
     }
     .header {
         margin: 0 25px;
         justify-content: center;
         height: 50px;
+    }
+    .header_nav_link[data-active=true] {
+        border-bottom: 3px #0065FC solid;
+        color: #0065FC;
+        border-top: none;
+    }
+    .header_nav_link[date-active=false] {
+        border-bottom: 3px grey solid;
     }
 }
 
@@ -63,7 +71,7 @@ MAIN TITRE
 */
 .main_title {
     display: block;
-    max-width: 992px;
+    max-width: 1400px;
     width: 80%;
     margin: 25px auto;
     padding: 20px 0px 10px 0px;
@@ -80,7 +88,7 @@ RECHERCHE
  */
 .search_box {
     display:inline-block;
-    max-width: 992px;
+    max-width: 1400px;
     width: 80%;
     margin: 25px auto;
     padding: 20px 0px 10px 0px;
@@ -101,9 +109,21 @@ RECHERCHE
 FILTRES
  */
 
+ @media screen and (max-width: 768px) {
+    .filters {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .filters_list {
+        display: flex;
+        flex-direction: column;
+    }
+ }
+
+
 .filters {
     display: flex;
-    max-width: 992px;
+    max-width: 1400px;
     width: 80%;
     margin: 25px auto;
     padding: 20px 0px 10px 0px;
@@ -119,7 +139,7 @@ FILTRES
     display: flex;
     align-items:center;
     justify-content: space-between;
-    max-width:992px;
+    max-width:1400px;
     width: 80%;
     margin: 25px 20px 25px 20px;
     font-weight: 700;
@@ -149,7 +169,7 @@ FILTRES
 
 .info {
     display: flex;
-    max-width: 992px;
+    max-width: 1400px;
     width: 80%;
     margin: 25px auto;
     padding: 20px 0px 10px 0px;
@@ -164,11 +184,22 @@ FILTRES
 /* 
 RÉSULTAT DE LA RECHERCHE HÉBERGEMENT
  */
+
+ @media screen and (max-width: 768px) {
+    .hotel .popular {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .hotel_item .popular_item {
+        display: flex;
+        flex-direction: column;
+    }
+ }
 .hotel {
     display:flex ;
     align-items: center;
     justify-content:space-between;
-    max-width: 992px;
+    max-width: 1400px;
     width: 80%;
     margin: auto;
     padding: 20px 0px 10px 0px;
@@ -250,7 +281,7 @@ PIED DE PAGE FOOTER
 .footer {
     display: block;
     background-color: #f2f2f2;
-    max-width: 992px;
+    max-width: 1400px;
     width: 80%;
     margin: 25px 10px 25px 10px;
     padding: 20px 0px 10px 0px;
@@ -265,7 +296,7 @@ NAV DU FOOTER
     display:flex ;
     align-items: center;
     justify-content:space-evenly;
-    max-width: 992px;
+    max-width: 1400px;
     width: 80%;
     margin: auto;
     padding: 60px 40px 40px 40px;
