@@ -18,7 +18,7 @@ HEADER LOGO + MENU
     display:flex ;
     align-items: center;
     justify-content:space-between;
-    width: 100%;
+    width: 80%;
     max-width: 1400px;
     margin: auto;
     padding: 20px 0px 10px 0px;
@@ -34,7 +34,7 @@ HEADER LOGO + MENU
     color:black;
 }
 
-.header nav a:hover {
+.header a:hover {
     border-top: 3px #0065FC solid;
     border-bottom: 3px transparent solid;
 }
@@ -52,17 +52,36 @@ RESPONSIVE HEADER
         flex-direction: column;
     }
     .header {
-        margin: 0 25px;
+        width: 100%;
         justify-content: center;
         height: 50px;
     }
+    .nav, .right {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .nav {
+        margin-top: 20px;
+    }
+
     .header_nav_link[data-active=true] {
         border-bottom: 3px #0065FC solid;
         color: #0065FC;
         border-top: none;
+        width: 50%;
     }
-    .header_nav_link[date-active=false] {
+
+    .header_nav_link[data-active=fasle] {
+        width: 50%;
+    }
+
+    .header_nav_link {
         border-bottom: 3px grey solid;
+    }
+    a:hover {
+        display: none;
     }
 }
 
@@ -87,16 +106,16 @@ MAIN TITRE
 RECHERCHE
  */
 .search_box {
-    display:inline-block;
-    max-width: 1400px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    max-width:1400px;
     width: 80%;
     margin: 25px auto;
-    padding: 20px 0px 10px 0px;
-    height: 100%;
+    font-weight: 700;
     font-size: medium;
     border: solid 2px #e2e2e2;
-    margin-top: 10px;
-    margin-left: 25px;
+    padding: 0px 20px 0px 0px;
     border-radius: 200px;
   
 }
@@ -206,27 +225,45 @@ RÉSULTAT DE LA RECHERCHE HÉBERGEMENT
 
 }
 
-.hotel_research {
+/* 
+MOSAÏQUE IMAGES
+ */
+
+ .hotel_research {
+    display: flex;
+    flex-flow: row;
+    gap: 20px;
+    width: 80%;
+    max-width: 1400px;
+ }
+.hotel_item{
     display: flex;
     flex-wrap: wrap;
     background: #F2F2F2;
     border-radius: 25px;
+    width: 80%;
+    max-width: 1400px;
+    margin: 25px auto;
+    padding: 20px 0px 10px 0px;
 }
 
-/* 
-MOSAÏQUE IMAGES
- */
-.hotel_item img {
+.item_1, .item_2, .item_3, .item_4, .item_5, .item_6 {
+    display: flex;
+    flex-flow: row;
     box-shadow: 0 4px 8px 0;
     background-color: white;
     border-radius: 20px;
-    width: 237px;
-    height: 260px;
-    position: relative;
-    float:inline-start;
+    width: 100%;
+    max-width: 1400px;
+    height: 50%;
     padding: 20px;
     margin: 20px;
     overflow: hidden;
+}
+
+.img_item {
+    justify-content: center;
+    align-content: center;
 }
 
 .popular {
@@ -234,29 +271,24 @@ MOSAÏQUE IMAGES
     flex-wrap: wrap;
     background: #F2F2F2;
     border-radius: 25px;
-
-}
-/* 
-MOSAÏQUE IMAGE
- */
-.popular_item img {
-    box-shadow: 0 4px 8px 0;
-    background-color: white;
-    border-radius: 20px;
-    width: 237px;
-    height: 260px;
-    position: relative;
-    float:right;
+    width: 80%;
+    max-width: 1400px;
+    margin: 5px;
     padding: 20px;
-    margin: 20px;
-    overflow: hidden;
+    position: relative;
 }
+
 /* 
 ACTIVITÉS
  */
 .activities {
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row;
+    max-width: 1400px;
+    width: 80%;
+    margin: 25px auto;
+    padding: 20px 0px 10px 0px;
+    height: 100%;
     background: #F2F2F2;
     border-radius: 25px;
 
@@ -265,8 +297,9 @@ ACTIVITÉS
     box-shadow: 0 4px 8px 0;
     background-color: white;
     border-radius: 20px;
-    width: 237px;
-    height: 260px;
+    width: 800%;
+    max-width: 1400px;
+    height: 100%;
     position: relative;
     float:right;
     padding: 20px;
