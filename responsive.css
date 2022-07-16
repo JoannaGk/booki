@@ -1,0 +1,71 @@
+Feuilles de style responsive
+
+/* Header */
+
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+    }
+    .header {
+        width: 100%;
+        justify-content: center;
+        height: 50px;
+    }
+    .nav, .right {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .nav {
+        margin-top: 20px;
+    }
+
+    .header_nav_link[data-active=true] {
+        border-bottom: 3px #0065FC solid;
+        color: #0065FC;
+        border-top: none;
+        width: 50%;
+    }
+
+    .header_nav_link[data-active=fasle] {
+        width: 50%;
+    }
+
+    .header_nav_link {
+        border-bottom: 3px grey solid;
+    }
+    a:hover {
+        display: none;
+    }
+}
+
+/* Main */
+
+/* FILTRES */
+
+@media screen and (max-width: 768px) {
+    .filters {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .filters_list {
+        display: flex;
+        flex-direction: column;
+    }
+ }
+
+/* RESULTAT DE LA RECHERCHE ITEMS */
+
+@media screen and (max-width: 768px) {
+    .hotel .popular {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .hotel_item .popular_item {
+        display: flex;
+        flex-direction: column;
+    }
+ }
+
+ 

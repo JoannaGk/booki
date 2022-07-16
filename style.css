@@ -18,21 +18,12 @@ HEADER LOGO + MENU
     display:flex ;
     align-items: center;
     justify-content:space-between;
-    width: 100%;
+    width: 80%;
     max-width: 1400px;
     margin: auto;
     padding: 20px 0px 10px 0px;
 }
-.header .left {
-    width: 70%;
-    padding-left: 25px;
-}
-.header .right {
-    width: 30%;
-}
-.header .left img {
-    max-width: 30%;
-}
+
 /*
  NAV BAR
  */
@@ -53,55 +44,6 @@ HEADER LOGO + MENU
     color: #0065FC;
 }
 
-/* 
-RESPONSIVE HEADER
-*/
-@media screen and (max-width: 768px) {
-    .header {
-        flex-direction: column;
-    }
-    .header {
-        width: 100%;
-        justify-content: center;
-        /* height: 50px; */
-    }
-    .nav, .right {
-        display: flex;
-        width: 100%;
-        /* justify-content: center; */
-    }
-    .header .left {
-        width: 100%;
-        padding-left: 0;
-    }
-    .header .right {
-        width: 100%;
-    }
-    .header .left img {
-        max-width: 30%;
-        display: block;
-        margin: auto;
-    }
-    .nav {
-        /* margin-top: 20px; */
-    }
-
-    .header_nav_link {
-        width: 50%;
-    }
-    .header_nav_link[data-active=true] {
-        border-bottom: 3px #0065FC solid;
-        border-top: 0px #0065FC solid;
-        color: #0065FC;
-    }
-
-    .header_nav_link {
-        border-bottom: 3px grey solid;
-    }
-    a:hover {
-        display: none;
-    }
-}
 
 /*
 MAIN TITRE 
@@ -146,17 +88,7 @@ RECHERCHE
 FILTRES
  */
 
- @media screen and (max-width: 768px) {
-    .filters {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .filters_list {
-        display: flex;
-        flex-direction: column;
-    }
- }
-
+ 
 
 .filters {
     display: flex;
@@ -222,16 +154,6 @@ FILTRES
 RÉSULTAT DE LA RECHERCHE HÉBERGEMENT
  */
 
- @media screen and (max-width: 768px) {
-    .hotel .popular {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .hotel_item .popular_item {
-        display: flex;
-        flex-direction: column;
-    }
- }
 .hotel {
     display:flex ;
     align-items: center;
@@ -265,25 +187,6 @@ MOSAÏQUE IMAGES
     padding: 20px 0px 10px 0px;
 }
 
-.item {
-    display: flex;
-    flex-direction: column;
-    
-    box-shadow: 0 4px 8px 0;
-    background-color: white;
-    border-radius: 20px;
-    width: 30%;
-    /* max-width: 1400px; */
-    /* height: 50%; */
-    /* margin: 20px; */
-    overflow: hidden;
-    padding: 10px;
-}
-.item .link {
-    display: block;
-    width: 100%;
-    height: 100%;
-}
 .item_1, .item_2, .item_3, .item_4, .item_5, .item_6 {
     display: flex;
     flex-flow: row;
@@ -301,7 +204,6 @@ MOSAÏQUE IMAGES
 .img_item {
     justify-content: center;
     align-content: center;
-    width : 100%;
 }
 
 .popular {
