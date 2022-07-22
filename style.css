@@ -93,7 +93,7 @@ HEADER LOGO + MENU
     color:#0065FC;
 }
 
-.a:hover {
+.header_nav_link a:hover {
     border-top: 3px #0065FC solid;
     border-bottom: 3px transparent solid;
     color: #0065FC;
@@ -149,18 +149,6 @@ RECHERCHE
     cursor: pointer;
     transition-duration: 0.1s;
     font-weight: bold;
-
-    /* display: flex;
-    align-items:center;
-    justify-content: space-between;
-    max-width:1400px;
-    width: 80%;
-    margin: 25px auto;
-    font-weight: 700;
-    font-size: medium;
-    border: solid 2px #e2e2e2;
-    padding: 0px 20px 0px 0px;
-    border-radius: 200px;*/
   
 }
 
@@ -287,17 +275,12 @@ MOSAÏQUE IMAGES
     color: black;
  }
 
-.conteneur_hotel {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-}
 
 .hotel_item{
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     align-items: flex-start;
-    align-content: center;
     background: #F2F2F2;
     border-radius: 25px;
     width: 75%;
@@ -305,6 +288,11 @@ MOSAÏQUE IMAGES
     padding: 20px;
 }
 
+#conteneur_hotel {
+    display: flexbox;
+    box-sizing: border-box;
+
+}
 .item {
     display: flex;
     flex-wrap: wrap;
