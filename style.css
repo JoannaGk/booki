@@ -248,6 +248,17 @@ FILTRES
 RÉSULTAT DE LA RECHERCHE HÉBERGEMENT
  */
 
+ @media screen and (max-width: 768px) {
+    .hotel_research {
+        display: flex;
+        flex-direction: column;
+    }
+    .popular {
+        order: 1;
+    }
+ }
+
+
 .hotel {
     display:flex ;
     align-items: center;
@@ -289,26 +300,32 @@ MOSAÏQUE IMAGES
 }
 
 #conteneur_hotel {
-    display: flexbox;
-    box-sizing: border-box;
+    display: flex;
+    width:100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 5px;
+    height: 95%;
 
 }
 .item {
     display: flex;
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;
     flex-flow: row;
     align-self: auto;
     align-items: center;
     width: 65%;
     flex-direction: row;
-    align-items: flex-end;
+    align-items: flex-end;*/
     box-shadow: 0 4px 8px 0;
     background-color: white;
     border-radius: 20px;
     padding: 10px;
-    margin: 20px;
+    margin: 15px;
     overflow: hidden;
-    flex-direction: row;
+    width: 25%;
+    height: 25%;
+    /*flex-direction: row;*/
 }
 
 .img_item {
@@ -351,15 +368,18 @@ MOSAÏQUE IMAGES
     position: relative;
 }
 
+.more_item, .a {
+    color: black;
+    font-style: bold;
+}
+.popular_title {
+    display: flex;
+    justify-content: space-between;
+}
+
 .popular_item {
     display: flex;
-    flex-flow: row;
-    align-self: auto;
-    align-items: center;
-    justify-content: center;
     width: 65%;
-    flex-direction: row;
-    align-items: flex-end;
     box-shadow: 0 4px 8px 0;
     background-color: white;
     border-radius: 20px;
@@ -375,7 +395,7 @@ ACTIVITÉS
     display: flex;
     flex-flow: row;
     max-width: 1400px;
-    width: 80%;
+    width: 100%;
     margin: 25px auto;
     padding: 20px 0px 10px 0px;
     height: 100%;
@@ -402,15 +422,9 @@ ACTIVITÉS
 PIED DE PAGE FOOTER 
 */
 .footer {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: row;
+    display: block;
     background-color: #f2f2f2;
-    max-width: 1400px;
-    width: 80%;
-    margin: 25px 10px 25px 10px;
-    padding: 20px 0px 10px 0px;
-    box-sizing: border-box;
+    width: 100%;
 }
 
 /* 
@@ -419,11 +433,8 @@ NAV DU FOOTER
 
 .footer_nav {
     display:flex ;
-    align-items: center;
-    justify-content:space-evenly;
-    max-width: 1400px;
-    width: 80%;
-    margin: auto;
+    justify-content:space-between;
+    width: 100%;
     padding: 60px 40px 40px 40px;
 }
 
